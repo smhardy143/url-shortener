@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Url = require('../models/url');
 
-// Helper: generate random short code
+//generate random short string
 const generateShort = () => Math.random().toString(36).substring(2, 8);
 
 // POST /api/shorten
